@@ -12,27 +12,31 @@ var divide = document.getElementById("div");
 add.addEventListener("click", function() {
 	a=document.getElementById("num_one");
 	b=document.getElementById("num_two");
-    handleAdd(a.value, b.value);
+    answer = handleAdd(a.value, b.value);
+    result.innerHTML = answer;
 
 });
 
 subtract.addEventListener("click", function() {
 	a=document.getElementById("num_one");
 	b=document.getElementById("num_two");
-    handleSub(a.value, b.value);
+    answer = handleSub(a.value, b.value);
+    result.innerHTML = answer;
 
 });
 
 multiply.addEventListener("click", function() {
 	a=document.getElementById("num_one");
 	b=document.getElementById("num_two");
-    handleMul(a.value, b.value);
+    answer = handleMul(a.value, b.value);
+    result.innerHTML = answer;
 });
 
 divide.addEventListener("click", function() {
 	a=document.getElementById("num_one");
 	b=document.getElementById("num_two");
-    handleDiv(a.value, b.value);
+    answer = handleDiv(a.value, b.value);
+    result.innerHTML = answer;
 });
 
 function handleAdd(a,b) {
@@ -40,7 +44,7 @@ function handleAdd(a,b) {
     console.log("a",a);
     console.log("b",b);
     console.log("sum", sum);
-    result.innerHTML = sum;
+    return sum;
 }
 
 function handleSub(a,b) {
@@ -48,7 +52,7 @@ function handleSub(a,b) {
     console.log("a",a);
     console.log("b",b);
     console.log("sub", sub);
-    result.innerHTML = sub;
+    return sub;
 }
 
 function handleMul(a,b) {
@@ -56,7 +60,7 @@ function handleMul(a,b) {
     console.log("a",a);
     console.log("b",b);
     console.log("mul", mul);
-    result.innerHTML = mul;
+   return mul;
 }
 
 function handleDiv(a,b) {
@@ -64,5 +68,7 @@ function handleDiv(a,b) {
     console.log("a",a);
     console.log("b",b);
     console.log("div", div);
-    result.innerHTML = div;
+    return div;
 }
+
+

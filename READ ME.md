@@ -1,4 +1,4 @@
-# Lambda Expression Calculator
+# Lambda Expression Calculator - COMPLETE
 
 ## Setup
 
